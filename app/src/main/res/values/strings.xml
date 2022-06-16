@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Plant Lens</string>
+    <string name="open_bottom_sheet">open bottom sheet</string>
+    <string name="result_will_be_shown_here">Result will be shown here</string>
+    <string name="description">Description</string>
+    <string name="predict">Predict</string>
+    <string name="diseased_image">Diseased Image</string>
+</resources>

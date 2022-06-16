@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.flipboard.bottomsheet.BottomSheetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <ImageView
+            android:id="@+id/iv_leafImage"
+            android:layout_width="256dp"
+            android:layout_height="256dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/diseased_image" />
+
+        <Button
+            android:id="@+id/btn_predict"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginVertical="300dp"
+            android:text="@string/predict" />
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="100dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/result_will_be_shown_here"
+            android:textSize="19sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/disease_description_tv"
+            android:text="@string/description"
+            android:textSize="19sp"
+            android:layout_marginTop="500dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif"/>
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/float_action_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/open_bottom_sheet"
+            app:layout_anchor="@id/bottomAppBar"
+            app:srcCompat="@drawable/ic_camera"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="619dp" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</com.flipboard.bottomsheet.BottomSheetLayout>
